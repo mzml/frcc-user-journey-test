@@ -54,7 +54,7 @@ step("User goes to the homepage", async function () {
 
 step("Run accessibility audit", async function () {
     const audit = await accessibility.runAudit();
-    await console.log(audit.violations);
+    console.log("\n\nAccessibility Score according to taiko-accessibility: " + audit.score);
 });
 
 step("User searches for <program_name>", async function(program_name) {
@@ -64,6 +64,6 @@ step("User searches for <program_name>", async function(program_name) {
     await waitFor(5000);
 });
 
-step("User sees <results> program found", async function(results) {
-	throw 'Unimplemented Step';
+step("User has <result> in the results", async function(result) {
+	assert.ok(await text(result).exists());
 });

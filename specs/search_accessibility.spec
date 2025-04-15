@@ -11,4 +11,4 @@ The student can use the Know Your Program and Search By Keyword to find informat
 The student can search program using keywords
 
 * User searches for "laser"
-* User sees "1" program found
+* User has "Optics & Laser Technology" in the results
