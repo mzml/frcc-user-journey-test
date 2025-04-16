@@ -54,14 +54,12 @@ step("User goes to the homepage", async function () {
 
 step("Run accessibility audit", async function () {
     const audit = await accessibility.runAudit();
-    console.log("\n\nAccessibility Score according to taiko-accessibility: " + audit.score);
+    gauge.message("Accessibility Score according to taiko-accessibility: " + audit.score);
 });
 
 step("User searches for <program_name>", async function(program_name) {
-    // await scrollDown("Browse All Programs");
 	await write(program_name, into(textBox({name: "search"})));
     await press('Enter');
-    await waitFor(5000);
 });
 
 step("User has <result> in the results", async function(result) {
