@@ -6,15 +6,18 @@ The student can use the Know Your Program and Search By Keyword to find informat
 * User goes to the homepage
 * Run accessibility audit
 
-## Find Your Program Search
+## Program Finder Search
 
 The student can search for a degree or certificate program using keywords from the ho,e page.
 
-* User searches for "laser"
+* User searches for program "laser"
 * User has "Optics & Laser Technology" in the results
 
 ## Search By Keyword
 
 The student can search for general information using the Keyword driven search tool.
 
-* User opens the keyword searrch menu
+* User opens the keyword search menu
+* User searches for keyword "tuition"
+* User has "Tuition and Fees" in the results
+

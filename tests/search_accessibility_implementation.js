@@ -57,7 +57,7 @@ step("Run accessibility audit", async function () {
     gauge.message("Accessibility Score according to taiko-accessibility: " + audit.score);
 });
 
-step("User searches for <program_name>", async function(program_name) {
+step("User searches for program <program_name>", async function(program_name) {
 	await write(program_name, into(textBox({name: "search"})));
     await press('Enter');
 });
