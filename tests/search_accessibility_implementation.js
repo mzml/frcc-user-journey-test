@@ -54,7 +54,7 @@ step("User goes to the homepage", async function () {
 
 step("Run accessibility audit", async function () {
     const audit = await accessibility.runAudit();
-    gauge.message("Accessibility Score according to taiko-accessibility: " + audit.score);
+    gauge.message("Accessibility Score according to taiko-accessibility : " + audit.score);
 });
 
 step("User searches for program <program_name>", async function(program_name) {
